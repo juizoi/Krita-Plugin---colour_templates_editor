@@ -1,1 +1,0 @@
-from .colour_templates_editor import *

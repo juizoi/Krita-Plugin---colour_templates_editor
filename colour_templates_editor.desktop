@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Service
+ServiceTypes=Krita/PythonPlugin
+X-KDE-Library=colour_templates_editor
+X-Python-2-Compatible=false
+X-Krita-Manual=myPluginManual.html
+Name=Tom Paul (My Favourite Brother)'s Colour Templates Editor
+Comment=This editor allows you to click a group and set colours by uppercase layer name
