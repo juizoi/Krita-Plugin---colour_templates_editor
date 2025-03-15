@@ -1,0 +1,23 @@
+{
+    "THOMAS BASE": {
+        "SKIN": "#503c2e",
+        "SCLERA": "#7c85ff",
+        "IRIS": "#ff0004",
+        "HAIR": "#6affa8"
+    },
+    "KING BASE": {
+        "SKIN": "#46301d",
+        "SCLERA": "#ff9597",
+        "IRIS": "#ff0004",
+        "TEETH": "#feffc6",
+        "CAPE": "#7542b3",
+        "TROUSERS": "#212121",
+        "TOP": "#7ce7ff",
+        "SHINE 2": "#faffbd",
+        "ARMOUR": "#fffb81",
+        "GOLD": "#ffd737",
+        "JEWEL": "#47ff75",
+        "HAIR": "#ea8edb",
+        "EARRING BALL": "#e7acff"
+    }
+}
