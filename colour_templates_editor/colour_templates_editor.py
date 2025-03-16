@@ -96,6 +96,8 @@ class GridUI(QWidget):
         print("POPULATING")
         self.widget_list.clear()
         self.name_item_dict = {}
+        if not Krita.instance().activeDocument():
+            return
         node: Node = Krita.instance().activeDocument().activeNode()
         if not node and not isinstance(node, GroupLayer):
             return
@@ -136,7 +138,7 @@ class GridUI(QWidget):
         self.load_colours_to_list()
 
     def load_colours_to_list(self):
-        with open("saved_templates.json", "r") as f:
+        with open("colour_templates_editor/saved_templates.json", "r") as f:
             data = json.loads(f.read())
             for item in self.name_item_dict.values():
                 if not item.parent.name() in data:
@@ -149,7 +151,7 @@ class GridUI(QWidget):
     def colour_changed(self, p_item: PresetItem):
         data = {}
         data_changed = False
-        with open("saved_templates.json", "r") as f:
+        with open("colour_templates_editor/saved_templates.json", "r") as f:
             data = json.loads(f.read())
             if not p_item.parent.name() in data:
                 data[p_item.parent.name()] = {}
